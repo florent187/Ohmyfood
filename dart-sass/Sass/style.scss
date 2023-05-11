@@ -1,0 +1,181 @@
+
+@import 'fonts.scss';
+
+/*** Variables ***/
+
+  /* colors */
+
+$primary-color: #9356DC;
+$secondary-color: #FF79DA;
+$gray-color: #4f5152;
+$light-gray-color: #e2e2e2;
+$light-gray-color2: #f6f6f6;
+$light-green-color: #99E2D0;
+$green-color: #008766;
+$blue-card-order-colo: #89c8fa;
+
+  /* fonts */ 
+
+
+
+/*** Mixins ***/
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*** Base ***/
+
+  *{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+  }
+
+  body{
+    font-family: 'Roboto', sans-serif;
+  }
+
+  /*header*/
+
+  header{
+    @include flex-center;
+    flex-direction: column;
+    height: 102px;
+   
+    
+  
+    .logo {
+      @include flex-center;
+      width: 100%;
+      height: 56px;
+      margin: 0;
+    }
+
+    img{
+      width: 168px;
+    }
+  
+    nav {
+      @include flex-center;
+      background-color: $light-gray-color;
+      width: 100%;
+      height: 45px;
+    }
+      p {
+        font-family:  $font-roboto-medium;
+        line-height: 16px;
+      }
+  
+      .fa-location-dot {
+        font-size: 1rem;
+        margin-right: 1rem;
+      }
+    }
+
+    /* Info section */
+.info-groupe {
+  @include flex-center;
+  flex-direction: column;
+  height: 250px;
+  background-color: $light-gray-color2;
+
+  .info-title {
+    @include flex-center;
+    text-align: center;
+    flex-direction: column;
+    padding: 2rem;
+    padding-top: 0;
+
+    h2 {
+      @include flex-center;
+      font-family: $font-roboto-bold;
+      font-size: 24px;
+      width: 275px;
+      margin-bottom: 10px;
+      margin-top: 0;
+    }
+
+    p {
+      font-family: $font-roboto-light;
+      font-size: 17px;
+    }
+  }
+
+  .btn {
+    @include flex-center;
+    background: linear-gradient(193.33deg, $primary-color -11.44%, $secondary-color 123.93%);
+    border-radius: 25px;
+    color: #fff;
+    font-weight: 500;
+    border: none;
+    width: 218px;
+    height: 50px;
+    margin: 0 32px;
+
+    a{
+      color: #fff;
+      font-size: 16px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+}
+
+/* function */
+
+.function {
+  background-color: #fff;
+  padding: 1rem;
+  margin: 1rem;
+  height: 400px;
+
+  .function-cards {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+
+    .card {
+      background-color: $lighter-gray-color;
+      border-radius: 1.5rem;
+      margin-bottom: 1rem;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+
+      span {
+        position: absolute;
+        display: flex;
+        width: 24px;
+        height: 24px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1.5rem;
+        color: #fff;
+        background-color: $primary-color;
+        left: 20px;
+      }
+
+      .card-content {
+        display: flex;
+        align-items: center;
+        margin-left: 1rem;
+        height: 70px;
+        width: 100%;
+        justify-content: center;
+
+        p {
+          margin-left: 2.5rem;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+}
