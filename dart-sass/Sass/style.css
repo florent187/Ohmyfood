@@ -262,4 +262,35 @@ header .fa-location-dot {
   position: absolute;
   top: 200px;
   right: 20px;
+}
+
+footer {
+  background-color: #353535;
+  flex-direction: column;
+  padding: 30px;
+  width: 100%;
+}
+footer .logo {
+  width: 100px;
+  filter: brightness(0) invert(1);
+  margin: 5px 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+footer .footer-menu {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+footer .footer-menu li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  color: #fff;
+}
+footer .footer-menu li i {
+  margin-right: 5px;
+  font-size: 12px;
 }/*# sourceMappingURL=style.css.map */

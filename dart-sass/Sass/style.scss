@@ -7,6 +7,7 @@
 
 $primary-color: #9356DC;
 $secondary-color: #FF79DA;
+$gray-color-bold:#353535;
 $gray-color: #4f5152;
 $light-gray-color: #e2e2e2;
 $light-gray-color2: #f6f6f6;
@@ -277,6 +278,42 @@ $border-radius: 20px;
         position: absolute;
         top: 200px;
         right: 20px;
+      }
+    }
+  }
+}
+
+// section footer
+
+footer {
+  background-color: $gray-color-bold; 
+  flex-direction: column;
+  padding: 30px;
+  width: 100%;
+
+  .logo {
+    width: 100px; 
+    filter: brightness(0) invert(1); 
+    margin: 5px 0;
+    object-fit: cover;
+  }
+
+  .footer-menu {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+
+    li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+      color: #fff;
+
+      i {
+        margin-right: 5px;
+        font-size: 12px;
       }
     }
   }
