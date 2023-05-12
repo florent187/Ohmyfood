@@ -9,6 +9,7 @@
     border-radius: 25px;
     color: #fff;
     font-weight: 500;
+    font-size: 16px;
     border: none;
     width: 218px;
     height: 50px;
@@ -16,9 +17,12 @@
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   }
 
+  $primary-color: #9356DC;
+  $secondary-color: #FF79DA;
   $light-green-color: #99E2D0;
   $light-gray-color: #e2e2e2;
   $light-gray-color2: #f6f6f6;
+  $gray-color-bold:#353535;
 
 
 *{
@@ -95,7 +99,7 @@ header{
       }
     }
   
-    // ENTREES
+    // ENTREES / PLATS / DESSERTS
 
     .menu {
       width: 100%;
@@ -157,6 +161,49 @@ header{
     }
   }
 
-  // PLATS
+    .btn-command{
+       @include flex-center;
+       margin-bottom: 40px;
 
+       .btn{
+        @include btn;
+        margin: 0;
+       }
+    } 
+
+
+
+// section footer
+
+   footer {
+    background-color: $gray-color-bold; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  
+    .logo {
+      width: 30%; 
+      filter: brightness(0) invert(1); 
+    }
+  
+    .footer-menu {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0;
+  
+      li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+        color: #fff;
+  
+        i {
+          margin-right: 5px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+   
   
