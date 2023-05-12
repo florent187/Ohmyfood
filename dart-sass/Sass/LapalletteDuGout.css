@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 63px;
+  position: relative;
+}
+header .fa-solid {
+  font-size: 24px;
+  position: absolute;
+  left: 25px;
+  top: 20px;
+  color: #000;
+}
+header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header img {
+  width: 168px;
+}
+
+.hero-section {
+  z-index: 1;
+  width: 100%;
+  height: 275px;
+}
+
+.entrees-plats-and-desserts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  width: 100%;
+  position: relative;
+  top: -60px;
+  z-index: 2;
+}
+.entrees-plats-and-desserts .main-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin-top: 13px;
+}
+.entrees-plats-and-desserts .main-title h2 {
+  font-family: "Shrikhand", cursive;
+  font-size: 28px;
+  margin: 20px 0;
+}
+.entrees-plats-and-desserts .main-title i {
+  font-size: 30px;
+}
+.entrees-plats-and-desserts .menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.entrees-plats-and-desserts .menu .title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 11px;
+  width: 90%;
+}
+.entrees-plats-and-desserts .menu .title .title-text {
+  display: inline-block;
+  border-bottom: 3px solid #99E2D0;
+}
+.entrees-plats-and-desserts .menu .menu-cards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+.entrees-plats-and-desserts .menu .menu-cards .card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 84%;
+  height: 70px;
+  background-color: #fff;
+  margin: 10px 0;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 0 15px;
+}
+.entrees-plats-and-desserts .menu .menu-cards .card a {
+  color: #000;
+}
+.entrees-plats-and-desserts .menu .menu-cards .card .card-title {
+  font-size: 18px;
+}
+.entrees-plats-and-desserts .menu .menu-cards .card .card-subtitle {
+  font-size: 15px;
+}
+.entrees-plats-and-desserts .menu .menu-cards .card span {
+  font-weight: bold;
+}/*# sourceMappingURL=LapalletteDuGout.css.map */
