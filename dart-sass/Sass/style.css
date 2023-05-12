@@ -185,8 +185,8 @@ header .fa-location-dot {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 60px;
   background-color: #f6f6f6;
+  height: 1245px;
 }
 .restaurants h2 {
   width: 88%;
@@ -266,20 +266,16 @@ header .fa-location-dot {
 
 footer {
   background-color: #353535;
-  flex-direction: column;
-  padding: 30px;
-  width: 100%;
-}
-footer .logo {
-  width: 100px;
-  filter: brightness(0) invert(1);
-  margin: 5px 0;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-footer .footer-menu {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+footer .logo {
+  width: 30%;
+  filter: brightness(0) invert(1);
+}
+footer .footer-menu {
   list-style: none;
   padding: 0;
   margin: 10px 0;
