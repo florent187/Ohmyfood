@@ -1,0 +1,103 @@
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("path/to/Roboto-Regular.woff2") format("woff2"), url("path/to/Roboto-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url("path/to/Roboto-Medium.woff2") format("woff2"), url("path/to/Roboto-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("path/to/Roboto-Bold.woff2") format("woff2"), url("path/to/Roboto-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: url("path/to/Roboto-Light.woff2") format("woff2"), url("path/to/Roboto-Light.woff") format("woff");
+}
+.main-container {
+  width: 100%;
+}
+
+.function {
+  background-color: #fff;
+  padding: 1rem;
+  margin: 1rem;
+  height: 225px;
+}
+.function h2 {
+  margin-left: 1rem;
+}
+.function .function-cards {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+.function .function-cards .card {
+  margin: 1rem;
+}
+.function .function-cards .card span {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  left: -8px;
+}
+.function .function-cards .card .card-content {
+  margin: 0;
+}
+.function .function-cards .card .card-content p {
+  margin-left: 1rem;
+}
+.function .function-cards .card .card-content .fa-solid {
+  color: #7e7e7e;
+  margin-left: 1rem;
+}
+
+.restaurants {
+  flex-direction: column;
+}
+.restaurants h2 {
+  width: 90%;
+  margin: 15px 0;
+}
+.restaurants .restaurants-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Deux colonnes en mode tablette */
+  grid-gap: 20px;
+  width: 90%;
+}
+.restaurants .restaurants-cards .card {
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  padding: 0;
+}
+footer .logo {
+  max-width: 100px;
+  margin-right: 20px;
+  margin-left: 45px;
+  margin-top: 1rem;
+}
+footer .footer-menu {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 2rem;
+}
+footer .footer-menu li {
+  margin-right: 10px;
+  font-size: 14px;
+}/*# sourceMappingURL=tablette.css.map */

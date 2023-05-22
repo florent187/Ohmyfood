@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +7,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b673968849.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="dart-sass/Sass/style.css">
+    <link rel="stylesheet" href="dart-sass/Sass/tablette.css" media="(min-width: 768px)">
+    <link rel="stylesheet" href="dart-sass/Sass/desktop.css" media="(min-width: 1024px)">
     <title>Ohmyfood</title>
 </head>
 <body>
@@ -25,9 +27,9 @@
                     <h2>Réservez le menu qui vous convient</h2>
                     <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
                 </div>
-                <button class="btn">
-                    <a href="#">Explorer nos restaurants</a>
-                </button>
+                 <button class="btn">
+                   <a href="#restaurants-section"> Explorer nos restaurants</a>
+                 </button>
         </aside>
         <main>
             <section class="function">
@@ -56,11 +58,11 @@
                     </article>
                 </div>
             </section>
-            <section class="restaurants">
+            <section id="restaurants-section" class="restaurants">
                 <h2>Restaurants</h2>
                 <div class="restaurants-cards">
                     <article class="card">
-                        <a href="#">                                
+                        <a href="LapalletteduGout.html">                                
                                 <img src="images/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo d'un plat ">
                                 <button>Nouveau</button>
                             <div class="card-text">
@@ -68,10 +70,16 @@
                                 <p>Ménilmontant</p>
                             </div>
                         </a>
-                        <i class="fa-solid fa-heart" style="color: #ea8add;"></i>
+                        <div class="heart">
+                            <input type="checkbox" class="checkbox-hidden">
+                            <label for="heartCheckbox">
+                              <i class="far fa-heart"></i>
+                              <i class="fas fa-heart"></i>
+                            </label>
+                          </div>
                     </article>
                     <article class="card">
-                        <a href="#">                                
+                        <a href="LaNoteEnchantee.html">                                
                                 <img src="images/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="photo d'un plat ">
                                 <button>Nouveau</button>
                             <div class="card-text">
@@ -79,10 +87,16 @@
                                 <p>Charonne</p>
                             </div>
                         </a>
-                        <i class="fa-solid fa-heart" style="color: #ea8add;"></i>
+                        <div class="heart">
+                            <input type="checkbox"class="checkbox-hidden">
+                            <label for="heartCheckbox">
+                              <i class="far fa-heart"></i>
+                              <i class="fas fa-heart"></i>
+                            </label>
+                          </div>
                     </article>
                     <article class="card">
-                        <a href="#">                                
+                        <a href="AlaFrancaise.html">                                
                                 <img src="images/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photo d'un plat ">
                                 <button>Nouveau</button>
                             <div class="card-text">
@@ -90,10 +104,16 @@
                                 <p>Cité Rouge</p>
                             </div>
                         </a>
-                        <i class="fa-solid fa-heart" style="color: #ea8add;"></i>
+                        <div class="heart">
+                            <input type="checkbox" class="checkbox-hidden">
+                            <label for="heartCheckbox">
+                              <i class="far fa-heart"></i>
+                              <i class="fas fa-heart"></i>
+                            </label>
+                          </div>
                     </article>
                     <article class="card">
-                        <a href="#">                                
+                        <a href="LedeliceDesSens.html">                                
                                 <img src="images/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="photo d'un plat ">
                                 <button>Nouveau</button>
                             <div class="card-text">
@@ -101,21 +121,25 @@
                                 <p>Folie-Méricourt</p>
                             </div>
                         </a>
-                        <i class="fa-solid fa-heart" style="color: #ea8add;"></i>
+                        <div class="heart">
+                            <input type="checkbox" class="checkbox-hidden">
+                            <label for="heartCheckbox">
+                              <i class="far fa-heart"></i>
+                              <i class="fas fa-heart"></i>
+                            </label>
+                          </div>
                     </article>
                 </div>
             </section>
         </main>
         <footer>
-            <div class="footer-contanier">
             <img src="images/images/logo/ohmyfood.png" alt="" class="logo">
                 <ul class="footer-menu">
                     <li><i class="fa-solid fa-utensils"></i>Proposer un restaurant</li>
                     <li><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</li>
                     <li>Mentions légales</li>
                     <li>Contact</li>
-                </ul>
-            </div>  
+                </ul> 
         </footer>
     </div>
 </body>
