@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("path/to/Roboto-Regular.woff2") format("woff2"), url("path/to/Roboto-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url("path/to/Roboto-Medium.woff2") format("woff2"), url("path/to/Roboto-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("path/to/Roboto-Bold.woff2") format("woff2"), url("path/to/Roboto-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: url("path/to/Roboto-Light.woff2") format("woff2"), url("path/to/Roboto-Light.woff") format("woff");
+}
+.entrees-plats-and-desserts {
+  width: 70%;
+  margin: 32px 130px;
+}
+.entrees-plats-and-desserts .main-title {
+  display: flex;
+  justify-content: center;
+}
+.entrees-plats-and-desserts .main-title h2 {
+  margin: 24px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  padding: 0;
+}
+footer .logo {
+  max-width: 100px;
+  margin-right: 20px;
+  margin-left: 45px;
+  margin-top: 1rem;
+}
+footer .footer-menu {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 2rem;
+}
+footer .footer-menu li {
+  margin-right: 10px;
+  font-size: 14px;
+}/*# sourceMappingURL=TabletteMenu.css.map */
