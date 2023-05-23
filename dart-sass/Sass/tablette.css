@@ -36,8 +36,8 @@
   margin-left: 1rem;
 }
 .function .function-cards {
-  justify-content: center;
   display: flex;
+  justify-content: center;
   flex-direction: row;
 }
 .function .function-cards .card {
@@ -64,18 +64,20 @@
   flex-direction: column;
 }
 .restaurants h2 {
-  width: 90%;
+  width: 87%;
   margin: 15px 0;
 }
 .restaurants .restaurants-cards {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Deux colonnes en mode tablette */
-  grid-gap: 20px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
   width: 90%;
 }
 .restaurants .restaurants-cards .card {
-  margin: 0;
-  margin-bottom: 2rem;
+  flex: 0 1 45%;
+  width: 100%;
 }
 
 footer {

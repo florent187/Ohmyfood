@@ -23,46 +23,22 @@
   src: url("path/to/Roboto-Light.woff2") format("woff2"), url("path/to/Roboto-Light.woff") format("woff");
 }
 body {
-  max-width: 1024px;
-}
-
-.hero-section {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.entrees-plats-and-desserts {
-  width: 70%;
-  margin: 32px 130px;
-}
-.entrees-plats-and-desserts .main-title {
   display: flex;
   justify-content: center;
-}
-.entrees-plats-and-desserts .main-title h2 {
-  margin: 24px;
+  align-items: center;
 }
 
-footer {
-  display: flex;
-  flex-direction: row-reverse;
-  width: 100%;
-  padding: 0;
+.main-container {
+  max-width: 1440px;
 }
-footer .logo {
-  max-width: 100px;
-  margin-right: 20px;
-  margin-left: 45px;
-  margin-top: 1rem;
+
+.restaurants h2 {
+  width: 85%;
+  margin: 15px 0;
 }
-footer .footer-menu {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  gap: 10px;
-  margin-top: 2rem;
+.restaurants .restaurants-cards {
+  width: 90%;
 }
-footer .footer-menu li {
-  margin-right: 10px;
-  font-size: 14px;
-}/*# sourceMappingURL=TabletteMenu.css.map */
+.restaurants .restaurants-cards .card {
+  flex: 0 1 45%;
+}/*# sourceMappingURL=desktop.css.map */

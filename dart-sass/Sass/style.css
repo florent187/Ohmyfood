@@ -126,7 +126,7 @@ header .fa-location-dot {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
   transition: 0.5s ease-in-out;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
-  transform: scale(101%);
+  transform: scale(100%);
 }
 .info-groupe a {
   color: #fff;
@@ -203,6 +203,7 @@ header .fa-location-dot {
   align-items: center;
   flex-wrap: wrap;
   background-color: #f6f6f6;
+  justify-content: center;
 }
 .restaurants .restaurants-cards .card {
   display: flex;
@@ -217,13 +218,51 @@ header .fa-location-dot {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
 }
-.restaurants .restaurants-cards .card a {
+.restaurants .restaurants-cards .card .heart-container {
+  display: inline-block;
+  position: absolute;
+  top: 205px;
+  right: 0;
+  font-size: 22px;
+  cursor: pointer;
+  z-index: 1;
+}
+.restaurants .restaurants-cards .card .heart-container .fa-heart {
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform-origin: bottom;
+  transition: transform 0.3s ease-in-out;
+  transform: scale(0);
+  color: transparent;
+  position: absolute;
+  right: 22px;
+}
+.restaurants .restaurants-cards .card .heart-container .fa-heart.far {
+  transform: scale(1);
+  -webkit-text-stroke: 0;
+  text-stroke: 0;
+  -webkit-text-fill-color: #000;
+  color: #000;
+}
+.restaurants .restaurants-cards .card .checkbox-hidden {
+  display: none;
+}
+.restaurants .restaurants-cards .card .checkbox-hidden:checked + .heart-container .far {
+  transform: scale(0);
+}
+.restaurants .restaurants-cards .card .checkbox-hidden:checked + .heart-container .fas {
+  transform: scale(1);
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+.restaurants .restaurants-cards a {
   display: flex;
   align-items: center;
   flex-direction: column;
   width: 100%;
 }
-.restaurants .restaurants-cards .card img {
+.restaurants .restaurants-cards img {
   width: 100%;
   padding: 0;
   height: 174px;
@@ -231,7 +270,7 @@ header .fa-location-dot {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.restaurants .restaurants-cards .card button {
+.restaurants .restaurants-cards button {
   margin: 10px;
   width: 80px;
   height: 29px;
@@ -243,7 +282,7 @@ header .fa-location-dot {
   border: none;
   position: absolute;
 }
-.restaurants .restaurants-cards .card .card-text {
+.restaurants .restaurants-cards .card-text {
   width: 90%;
   display: flex;
   flex-direction: column;
@@ -251,32 +290,14 @@ header .fa-location-dot {
   align-items: flex-start;
   color: #000;
 }
-.restaurants .restaurants-cards .card .card-text h3 {
+.restaurants .restaurants-cards .card-text h3 {
   font-size: 18px;
   margin-bottom: 0;
   margin-top: 14px;
 }
-.restaurants .restaurants-cards .card .card-text p {
+.restaurants .restaurants-cards .card-text p {
   margin: 0;
   margin-top: 5px;
-}
-.restaurants .restaurants-cards .card .checkbox-hidden {
-  display: none;
-}
-.restaurants .restaurants-cards .card .checkbox-hidden:checked + label .fas {
-  display: inline;
-  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.restaurants .restaurants-cards .card .fa-heart {
-  font-size: 1.5rem;
-  position: absolute;
-  top: 200px;
-  right: 20px;
-}
-.restaurants .restaurants-cards .card .fas {
-  display: none;
 }
 
 footer {

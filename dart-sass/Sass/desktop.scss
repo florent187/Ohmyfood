@@ -1,0 +1,32 @@
+@import 'colors.scss';
+@import 'fonts.scss';
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+body{
+    @include flex-center;
+}
+
+.main-container{
+   max-width: 1440px; 
+}
+
+
+.restaurants{
+    h2{
+        width: 85%;
+        margin: 15px 0;
+    }
+
+    .restaurants-cards{
+        width: 90%;
+
+        .card{
+            flex: 0 1 45%;
+        }
+    }
+}

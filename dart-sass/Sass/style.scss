@@ -128,7 +128,7 @@ $btn-color-normal: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
         background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
         transition:  0.5s ease-in-out;
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
-        transform: scale(101%);
+        transform: scale(100%);
         
       }
     }
@@ -204,22 +204,22 @@ $btn-color-normal: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
 }
 
 // Styles pour la section des restaurants
+
 .restaurants {
   @include flex-center;
   flex-direction: column;
   background-color: $light-gray-color2;
  
-
   h2 {
     width: 88%;
-    margin-bottom: 15px
+    margin-bottom: 15px;
   }
 
   .restaurants-cards {
     @include flex-center;
     flex-wrap: wrap;
     background-color: $light-gray-color2;
-   
+    justify-content: center;
 
     .card {
       @include flex-center;
@@ -232,8 +232,53 @@ $btn-color-normal: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
       box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
       border-radius: 15px;
 
+      .heart-container {
+        display: inline-block;
+        position: absolute;
+        top: 205px;
+        right: 0;
+        font-size: 22px;
+        cursor: pointer;
+        z-index: 1;
+  
+        .fa-heart {
+          background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          transform-origin: bottom;
+          transition: transform 0.3s ease-in-out;
+          transform: scale(0);
+          color: transparent;
+          position: absolute;
+          right: 22px;
+        }
+  
+        .fa-heart.far {
+          transform: scale(1);
+          -webkit-text-stroke: 0;
+           text-stroke: 0;
+          -webkit-text-fill-color: #000;
+           color: #000;
+        }
+      }
+  
+      .checkbox-hidden {
+        display: none;
+      }
+  
+      .checkbox-hidden:checked + .heart-container .far {
+        transform: scale(0);
+      }
+  
+      .checkbox-hidden:checked + .heart-container .fas {
+        transform: scale(1);
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+      }
+    }
+  
+
       a {
-        // Styles spécifiques pour le lien
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -248,20 +293,18 @@ $btn-color-normal: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
         object-fit: cover;
       }
 
-        // Styles spécifiques pour le bouton "Nouveau"
-        button{
-          margin: 10px;
-          width: 80px;
-          height: 29px;
-          right: 10px;
-          font-size: 14px;
-          font-weight: bold;
-          color: $green-color;
-          background-color: $light-green-color;
-          border: none;
-          position: absolute;
+      button {
+        margin: 10px;
+        width: 80px;
+        height: 29px;
+        right: 10px;
+        font-size: 14px;
+        font-weight: bold;
+        color: $green-color;
+        background-color: $light-green-color;
+        border: none;
+        position: absolute;
       }
-      
 
       .card-text {
         width: 90%;
@@ -282,33 +325,9 @@ $btn-color-normal: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
           margin-top: 5px;
         }
       }
-
-      
-      .checkbox-hidden {
-        display: none;
-      }
-      
-      .checkbox-hidden:checked + label .fas {
-        display: inline;
-        background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
-      
-      .fa-heart {
-        font-size: 1.5rem;
-        position: absolute;
-        top: 200px;
-        right: 20px;
-      }
-      
-      .fas {
-        display: none;
-      }
-     
     }
   }
-}
+
 
 // section footer
 
