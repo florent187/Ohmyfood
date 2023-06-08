@@ -100,16 +100,54 @@ header img {
   border-radius: 15px;
   padding: 0 15px;
 }
-.entrees-plats-and-desserts .menu .menu-cards .card a {
+.entrees-plats-and-desserts .menu .menu-cards .card .heart-container {
+  display: inline-block;
+  position: absolute;
+  top: 205px;
+  right: 0;
+  font-size: 22px;
+  cursor: pointer;
+  z-index: 1;
+}
+.entrees-plats-and-desserts .menu .menu-cards .card .heart-container .fa-heart {
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform-origin: bottom;
+  transition: transform 0.3s ease-in-out;
+  transform: scale(0);
+  color: transparent;
+  position: absolute;
+  right: 22px;
+}
+.entrees-plats-and-desserts .menu .menu-cards .card .heart-container .fa-heart.far {
+  transform: scale(1);
+  -webkit-text-stroke: 0;
+  text-stroke: 0;
+  -webkit-text-fill-color: #000;
   color: #000;
 }
-.entrees-plats-and-desserts .menu .menu-cards .card .card-title {
+.entrees-plats-and-desserts .menu .menu-cards .card .checkbox-hidden {
+  display: none;
+}
+.entrees-plats-and-desserts .menu .menu-cards .card .checkbox-hidden:checked + .heart-container .far {
+  transform: scale(0);
+}
+.entrees-plats-and-desserts .menu .menu-cards .card .checkbox-hidden:checked + .heart-container .fas {
+  transform: scale(1);
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+.entrees-plats-and-desserts .menu .menu-cards a {
+  color: #000;
+}
+.entrees-plats-and-desserts .menu .menu-cards .card-title {
   font-size: 18px;
 }
-.entrees-plats-and-desserts .menu .menu-cards .card .card-subtitle {
+.entrees-plats-and-desserts .menu .menu-cards .card-subtitle {
   font-size: 15px;
 }
-.entrees-plats-and-desserts .menu .menu-cards .card span {
+.entrees-plats-and-desserts .menu .menu-cards span {
   font-weight: bold;
 }
 

@@ -6,6 +6,7 @@
     align-items: center;
   }
 
+
 .main-container{
     width: 100%;
 }
@@ -29,6 +30,7 @@
   
       .card {
         margin: 1rem;
+        
         
         span {
           position: relative;
@@ -54,8 +56,7 @@
   }
 
   //restaurant section
-
-  .restaurants {
+  .box {
     flex-direction: column;
   
     h2 {
@@ -64,16 +65,15 @@
     }
   
     .restaurants-cards {
-      align-items: center;
-      justify-content: center;
       display: flex;
       flex-wrap: wrap;
       gap: 30px;
+      justify-content: space-between;
       width: 90%;
   
       .card {
-        flex: 0 1 45%; 
-        width: 100%; 
+        flex: 0 1 44%;
+        width: 100%;
       }
     }
   }
@@ -90,7 +90,7 @@
         max-width: 100px; 
         margin-right: 20px;
         margin-left: 45px;
-        margin-top: 1rem;
+        margin-top: 2rem;
       }
 
       .footer-menu{

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Roboto";
   font-style: normal;
@@ -37,6 +38,57 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  animation: fadeOut 1s linear 2s forwards;
+}
+.spinner-container::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 0, 0, 0.5); /* Arrière-plan rouge semi-transparent */
+  pointer-events: none;
+  z-index: -1;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+.spinner {
+  border: 8px solid #f3f3f3; /* Couleur de la bordure */
+  border-top: 8px solid #3498db; /* Couleur de la partie supérieure de la bordure */
+  border-radius: 50%; /* Forme du spinner (ronde dans ce cas) */
+  width: 40px; /* Largeur du spinner */
+  height: 40px; /* Hauteur du spinner */
+  animation: spin 1s linear infinite; /* Animation du spinner */
+  position: relative;
+  top: 200px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  } /* Angle de départ */
+  100% {
+    transform: rotate(360deg);
+  } /* Angle de fin */
+}
 /*header*/
 header {
   display: flex;
@@ -121,6 +173,7 @@ header .fa-location-dot {
   margin: 0 32px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   transition: 0.5s ease-in-out;
+  cursor: pointer;
 }
 .info-groupe .btn:hover {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
@@ -304,7 +357,7 @@ footer {
   background-color: #353535;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   padding: 20px;
 }
 footer .logo {
@@ -320,6 +373,9 @@ footer .footer-menu li {
   display: flex;
   align-items: center;
   margin-bottom: 5px;
+  color: #fff;
+}
+footer .footer-menu li a {
   color: #fff;
 }
 footer .footer-menu li i {

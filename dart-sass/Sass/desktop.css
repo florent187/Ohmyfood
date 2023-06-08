@@ -41,4 +41,8 @@ body {
 }
 .restaurants .restaurants-cards .card {
   flex: 0 1 45%;
+}
+
+footer .logo {
+  margin-right: 70px;
 }/*# sourceMappingURL=desktop.css.map */

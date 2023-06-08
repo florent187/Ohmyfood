@@ -8,7 +8,7 @@
 }
 
 body {
-  max-width: 1024px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -28,22 +28,18 @@ body {
     width: 90%;
     margin-top: 13px;
 
-    h2{
-      margin-right: 75px;
-    }
-
     .fa-heart{
       position: absolute;
-      right: 110px;
+      right: 382px;
       top: -167px;
     }
   }
 
   .box {
     width: 80%;
+
     &__menu {
-      &__title {
-        margin-left: 20px;
+      &__title {margin-left: 40px;
       }
     }
 
@@ -82,7 +78,3 @@ footer {
   }
 }
 
-
-
-  
-  

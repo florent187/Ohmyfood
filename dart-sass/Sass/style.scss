@@ -42,6 +42,51 @@ $btn-color-normal: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
     font-family: 'Roboto', sans-serif;
   }
 
+  .spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    z-index: 999;
+    animation: fadeOut 1s linear 2s forwards;
+  
+    &::after {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 0, 0, 0.5); /* Arrière-plan rouge semi-transparent */
+      pointer-events: none;
+      z-index: -1;
+    }
+  }
+  
+  @keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; display: none; }
+  }
+  
+  .spinner {
+    border: 8px solid #f3f3f3; /* Couleur de la bordure */
+    border-top: 8px solid #3498db; /* Couleur de la partie supérieure de la bordure */
+    border-radius: 50%; /* Forme du spinner (ronde dans ce cas) */
+    width: 40px; /* Largeur du spinner */
+    height: 40px; /* Hauteur du spinner */
+    animation: spin 1s linear infinite; /* Animation du spinner */
+    position: relative;
+    top: 200px;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); } /* Angle de départ */
+    100% { transform: rotate(360deg); } /* Angle de fin */
+  }
   /*header*/
 
   header{
@@ -122,6 +167,7 @@ $btn-color-normal: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
     margin: 0 32px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     transition:  0.5s ease-in-out;
+    cursor: pointer;
 
 
       &:hover{
@@ -335,12 +381,13 @@ footer {
   background-color: $gray-color-bold; 
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   padding: 20px;
 
   .logo {
     width: 30%; 
     filter: brightness(0) invert(1); 
+
   }
 
   .footer-menu {
@@ -353,6 +400,10 @@ footer {
       align-items: center;
       margin-bottom: 5px;
       color: #fff;
+      
+        a{
+          color: #fff;
+        }
 
       i {
         margin-right: 5px;

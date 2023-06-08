@@ -24,6 +24,7 @@
 }
 body {
   max-width: 1024px;
+  margin: 0 auto;
 }
 
 .hero-section {
@@ -32,26 +33,46 @@ body {
 }
 
 .entrees-plats-and-desserts {
-  width: 70%;
-  margin: 32px 130px;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: -30px;
 }
 .entrees-plats-and-desserts .main-title {
   display: flex;
+  align-items: center;
   justify-content: center;
+  width: 90%;
+  margin-top: 13px;
 }
 .entrees-plats-and-desserts .main-title h2 {
+  margin-right: 75px;
+}
+.entrees-plats-and-desserts .main-title .fa-heart {
+  position: absolute;
+  right: 110px;
+  top: -167px;
+}
+.entrees-plats-and-desserts .box {
+  width: 80%;
+}
+.entrees-plats-and-desserts .box__menu__title {
+  margin-left: 20px;
+}
+.entrees-plats-and-desserts .box h2 {
   margin: 24px;
 }
 
 footer {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: row-reverse;
   width: 100%;
   padding: 0;
 }
 footer .logo {
   max-width: 100px;
-  margin-right: 20px;
+  margin-right: 50px;
   margin-left: 45px;
   margin-top: 1rem;
 }

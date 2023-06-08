@@ -22,74 +22,56 @@
   font-weight: 300;
   src: url("path/to/Roboto-Light.woff2") format("woff2"), url("path/to/Roboto-Light.woff") format("woff");
 }
-.main-container {
-  width: 100%;
+body {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
-.function {
-  background-color: #fff;
-  padding: 1rem;
-  margin: 1rem;
-  height: 225px;
+.hero-section {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-.function h2 {
-  margin-left: 1rem;
+
+.entrees-plats-and-desserts {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: -30px;
 }
-.function .function-cards {
+.entrees-plats-and-desserts .main-title {
   display: flex;
+  align-items: center;
   justify-content: center;
-  flex-direction: row;
-}
-.function .function-cards .card {
-  margin: 1rem;
-}
-.function .function-cards .card span {
-  position: relative;
-  width: 20px;
-  height: 20px;
-  left: -8px;
-}
-.function .function-cards .card .card-content {
-  margin: 0;
-}
-.function .function-cards .card .card-content p {
-  margin-left: 1rem;
-}
-.function .function-cards .card .card-content .fa-solid {
-  color: #7e7e7e;
-  margin-left: 1rem;
-}
-
-.box {
-  flex-direction: column;
-}
-.box h2 {
-  width: 87%;
-  margin: 15px 0;
-}
-.box .restaurants-cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: space-between;
   width: 90%;
+  margin-top: 13px;
 }
-.box .restaurants-cards .card {
-  flex: 0 1 44%;
-  width: 100%;
+.entrees-plats-and-desserts .main-title .fa-heart {
+  position: absolute;
+  right: 382px;
+  top: -167px;
+}
+.entrees-plats-and-desserts .box {
+  width: 80%;
+}
+.entrees-plats-and-desserts .box__menu__title {
+  margin-left: 40px;
+}
+.entrees-plats-and-desserts .box h2 {
+  margin: 24px;
 }
 
 footer {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: row-reverse;
   width: 100%;
   padding: 0;
 }
 footer .logo {
   max-width: 100px;
-  margin-right: 20px;
+  margin-right: 50px;
   margin-left: 45px;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 footer .footer-menu {
   width: 100%;
@@ -101,4 +83,4 @@ footer .footer-menu {
 footer .footer-menu li {
   margin-right: 10px;
   font-size: 14px;
-}/*# sourceMappingURL=tablette.css.map */
+}/*# sourceMappingURL=desktopMenu.css.map */
