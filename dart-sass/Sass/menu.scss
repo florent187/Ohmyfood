@@ -115,7 +115,6 @@ header img {
   width: 100%;
   position: relative;
   margin-top: -30px;
-  height: 1139px;
   
   .main-title {
     display: flex;
@@ -127,7 +126,7 @@ header img {
 
     h2 {
       font-family: "Shrikhand", cursive;
-      font-size: 30px;
+      font-size: 28px;
       margin: 20px 0;
       font-weight: 100;
     }
@@ -150,17 +149,16 @@ header img {
       transform: scale(0);
       color: transparent;
       position: absolute;
-      right: 50px;
-      top: -165px;
-      font-size: 34px;
+      right: 63px;
+      top: -162px;
     }
 
     .fa-heart.far {
       transform: scale(1);
       -webkit-text-stroke: 0;
-       text-stroke: 0;
       -webkit-text-fill-color: #000;
        color: #000;
+       font-size: 22px;
     }
   }
 
@@ -185,7 +183,7 @@ header img {
   width: 100%;
   &__menu {
     &__title {
-      margin: 24px 0px 8px 50px;
+      margin: 24px 0px 8px 15px;
       border-bottom: 3px solid #99e2d0;
       padding-bottom: 6px;
       display: inline-block;
@@ -323,7 +321,7 @@ header img {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
   transition: 0.5s ease-in-out;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
-  transform: scale(100%);
+  transform: scale(1);
 }
 
 footer {

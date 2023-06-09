@@ -56,26 +56,23 @@
   }
 
   //restaurant section
-  .box {
-    flex-direction: column;
-  
-    h2 {
-      width: 87%;
+
+  .restaurants{
+    h2{
+      width: 96%;
       margin: 15px 0;
     }
-  
-    .restaurants-cards {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 30px;
-      justify-content: space-between;
-      width: 90%;
-  
-      .card {
-        flex: 0 1 44%;
-        width: 100%;
-      }
-    }
+  }
+  .restaurants-cards {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 15px;
+  }
+
+  .card {
+    flex-basis: calc(50% - 26px);
+    flex-grow: 0;
+    margin: 13px;
   }
 
   //footer section

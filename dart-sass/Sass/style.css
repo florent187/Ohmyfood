@@ -23,10 +23,7 @@
   font-weight: 300;
   src: url("path/to/Roboto-Light.woff2") format("woff2"), url("path/to/Roboto-Light.woff") format("woff");
 }
-/*** Variables ***/
-/* colors */
-/* fonts */
-/*** Mixins ***/
+
 /*** Base ***/
 * {
   padding: 0;
@@ -179,7 +176,7 @@ header .fa-location-dot {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
   transition: 0.5s ease-in-out;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
-  transform: scale(100%);
+  transform: scale(1);
 }
 .info-groupe a {
   color: #fff;
@@ -294,7 +291,6 @@ header .fa-location-dot {
 .restaurants .restaurants-cards .card .heart-container .fa-heart.far {
   transform: scale(1);
   -webkit-text-stroke: 0;
-  text-stroke: 0;
   -webkit-text-fill-color: #000;
   color: #000;
 }
@@ -323,7 +319,10 @@ header .fa-location-dot {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.restaurants .restaurants-cards button {
+.restaurants .restaurants-cards span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 10px;
   width: 80px;
   height: 29px;
