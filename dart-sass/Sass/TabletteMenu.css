@@ -2,25 +2,25 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  src: url("path/to/Roboto-Regular.woff2") format("woff2"), url("path/to/Roboto-Regular.woff") format("woff");
+  src: url("../../fonts/Roboto-Bold.woff2") format("woff2"), url("../../fonts/Roboto-Bold.woff") format("woff");
 }
 @font-face {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  src: url("path/to/Roboto-Medium.woff2") format("woff2"), url("path/to/Roboto-Medium.woff") format("woff");
+  src: url("../../fonts/Roboto-Bold.woff2") format("woff2"), url("../../fonts/Roboto-Bold.woff") format("woff");
 }
 @font-face {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  src: url("path/to/Roboto-Bold.woff2") format("woff2"), url("path/to/Roboto-Bold.woff") format("woff");
+  src: url("../../fonts/Roboto-Bold.woff2") format("woff2"), url("../../fonts/Roboto-Bold.woff") format("woff");
 }
 @font-face {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
-  src: url("path/to/Roboto-Light.woff2") format("woff2"), url("path/to/Roboto-Light.woff") format("woff");
+  src: url("../../fonts/Roboto-Bold.woff2") format("woff2"), url("../../fonts/Roboto-Bold.woff") format("woff");
 }
 body {
   max-width: 1024px;
@@ -46,11 +46,6 @@ body {
 }
 .entrees-plats-and-desserts .main-title h2 {
   margin-right: 75px;
-}
-.entrees-plats-and-desserts .main-title .fa-heart {
-  position: absolute;
-  right: 205px;
-  top: -162px;
 }
 .entrees-plats-and-desserts .box {
   width: 80%;

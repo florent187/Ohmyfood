@@ -1,29 +1,4 @@
 @charset "UTF-8";
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  src: url("path/to/Roboto-Regular.woff2") format("woff2"), url("path/to/Roboto-Regular.woff") format("woff");
-}
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  src: url("path/to/Roboto-Medium.woff2") format("woff2"), url("path/to/Roboto-Medium.woff") format("woff");
-}
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  src: url("path/to/Roboto-Bold.woff2") format("woff2"), url("path/to/Roboto-Bold.woff") format("woff");
-}
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 300;
-  src: url("path/to/Roboto-Light.woff2") format("woff2"), url("path/to/Roboto-Light.woff") format("woff");
-}
-
 /*** Base ***/
 * {
   padding: 0;
@@ -39,10 +14,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 100%;
   z-index: 999;
   animation: fadeOut 1s linear 2s forwards;
 }
@@ -75,7 +50,8 @@ body {
   height: 40px; /* Hauteur du spinner */
   animation: spin 1s linear infinite; /* Animation du spinner */
   position: relative;
-  top: 200px;
+  top: -50%;
+  left: -50%;
 }
 
 @keyframes spin {
@@ -116,7 +92,6 @@ header nav {
   height: 45px;
 }
 header p {
-  font-family: "Roboto", sans-serif;
   line-height: 16px;
 }
 header .fa-location-dot {
@@ -142,18 +117,17 @@ header .fa-location-dot {
   padding: 2rem;
   padding-top: 0;
 }
-.info-groupe .info-title h2 {
+.info-groupe .info-title h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Roboto", sans-serif;
+  font-weight: 700;
   font-size: 24px;
   width: 275px;
   margin-bottom: 10px;
   margin-top: 0;
 }
 .info-groupe .info-title p {
-  font-family: "Roboto", sans-serif;
   font-size: 17px;
 }
 .info-groupe .btn {
@@ -176,7 +150,7 @@ header .fa-location-dot {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
   transition: 0.5s ease-in-out;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
-  transform: scale(1);
+  transform: scale(100%);
 }
 .info-groupe a {
   color: #fff;
@@ -188,7 +162,6 @@ header .fa-location-dot {
   background-color: #fff;
   padding: 1rem;
   margin: 1rem;
-  height: 368px;
   margin-top: 20px;
 }
 .function .function-cards {
@@ -245,7 +218,7 @@ header .fa-location-dot {
 }
 .restaurants h2 {
   width: 88%;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 .restaurants .restaurants-cards {
   display: flex;

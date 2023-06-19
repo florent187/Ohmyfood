@@ -3,25 +3,25 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  src: url("path/to/Roboto-Regular.woff2") format("woff2"), url("path/to/Roboto-Regular.woff") format("woff");
+  src: url("../../fonts/Roboto-Bold.woff2") format("woff2"), url("../../fonts/Roboto-Bold.woff") format("woff");
 }
 @font-face {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  src: url("path/to/Roboto-Medium.woff2") format("woff2"), url("path/to/Roboto-Medium.woff") format("woff");
+  src: url("../../fonts/Roboto-Bold.woff2") format("woff2"), url("../../fonts/Roboto-Bold.woff") format("woff");
 }
 @font-face {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  src: url("path/to/Roboto-Bold.woff2") format("woff2"), url("path/to/Roboto-Bold.woff") format("woff");
+  src: url("../../fonts/Roboto-Bold.woff2") format("woff2"), url("../../fonts/Roboto-Bold.woff") format("woff");
 }
 @font-face {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
-  src: url("path/to/Roboto-Light.woff2") format("woff2"), url("path/to/Roboto-Light.woff") format("woff");
+  src: url("../../fonts/Roboto-Bold.woff2") format("woff2"), url("../../fonts/Roboto-Bold.woff") format("woff");
 }
 * {
   margin: 0;
@@ -60,7 +60,9 @@ header img {
 .hero-section {
   z-index: 1;
   width: 100%;
-  height: 275px;
+  height: 171px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @keyframes appear {
@@ -113,30 +115,42 @@ header img {
   position: relative;
   margin-top: -30px;
 }
-.entrees-plats-and-desserts .main-title {
+
+.main-title {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  width: 100%;
   margin-top: 13px;
-  margin-left: 33px;
 }
-.entrees-plats-and-desserts .main-title h2 {
+.main-title .flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-title .flex-container .heart {
+  padding-left: 25px;
+  position: relative;
+}
+.main-title h1 {
   font-family: "Shrikhand", cursive;
-  font-size: 28px;
+  font-size: 22px;
   margin: 20px 0;
   font-weight: 100;
 }
-.entrees-plats-and-desserts .heart-container {
-  display: inline-block;
-  position: absolute;
-  top: 205px;
-  right: 0;
+
+.heart-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   font-size: 22px;
   cursor: pointer;
   z-index: 1;
+  position: absolute;
+  top: -13px;
+  left: 16px;
 }
-.entrees-plats-and-desserts .heart-container .fa-heart {
+
+.fa-heart {
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -144,27 +158,33 @@ header img {
   transition: transform 0.3s ease-in-out;
   transform: scale(0);
   color: transparent;
+  font-size: 22px;
   position: absolute;
-  right: 63px;
-  top: -162px;
+  top: 0;
+  left: 0;
 }
-.entrees-plats-and-desserts .heart-container .fa-heart.far {
+
+.fa-heart.far {
   transform: scale(1);
   -webkit-text-stroke: 0;
   -webkit-text-fill-color: #000;
   color: #000;
   font-size: 22px;
 }
-.entrees-plats-and-desserts .checkbox-hidden {
+
+.checkbox-hidden {
   display: none;
 }
-.entrees-plats-and-desserts .checkbox-hidden:checked + .heart-container .far {
+
+.checkbox-hidden:checked + .heart-container .far {
   transform: scale(0);
-}
-.entrees-plats-and-desserts .checkbox-hidden:checked + .heart-container .fas {
-  transform: scale(1);
   -webkit-text-fill-color: transparent;
   color: transparent;
+  font-size: 22px;
+}
+
+.checkbox-hidden:checked + .heart-container .fas {
+  transform: scale(1);
 }
 
 .box {
@@ -176,6 +196,7 @@ header img {
   padding-bottom: 6px;
   display: inline-block;
   font-weight: lighter;
+  font-size: 16px;
 }
 .box__element {
   border-radius: 10px;
@@ -208,6 +229,10 @@ header img {
 .box__contents__title {
   font-weight: 800;
   font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 80%;
 }
 .box__contents__title:hover {
   width: auto;
@@ -215,7 +240,7 @@ header img {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  width: 82%;
+  width: 80%;
 }
 .box__contents__left {
   width: 100%;
@@ -230,6 +255,10 @@ header img {
 .box__contents__inline__subtitle {
   font-size: 15px;
   font-weight: 300;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 80%;
 }
 .box__contents__inline__subtitle:hover {
   width: auto;
@@ -237,7 +266,7 @@ header img {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  width: 82%;
+  width: 80%;
 }
 .box__contents__inline__price {
   position: absolute;
@@ -329,4 +358,8 @@ footer .footer-menu li {
 footer .footer-menu li i {
   margin-right: 5px;
   font-size: 12px;
+}
+
+footer .footer-menu li a {
+  color: #fff;
 }/*# sourceMappingURL=menu.css.map */

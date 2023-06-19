@@ -6,46 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b673968849.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="dart-sass/Sass/menu.css"> 
+    <link rel="stylesheet" href="dart-sass/Sass/menu.css">
     <link rel="stylesheet" href="dart-sass/Sass/TabletteMenu.css" media="(min-width: 768px)">
     <link rel="stylesheet" href="dart-sass/Sass/desktopMenu.css" media="(min-width: 1024px)">
     <title>Ohmyfood</title>
 </head>
 <body>
-     <!-- SECTION 0 Load spinner -->
 
-  <div class="spinner">
-      <div class="spinner_border"></div>
-  </div>
-
-    <div class="main-container">
+    <div class="main-container flex-container">
         <header>
             <a href="index.html"><i  class="fa-sharp fa-solid fa-arrow-left"></i></a>
-            <img class="logo" src="images/images/logo/ohmyfood.png" alt="logo du restaurant">
+            <img class="logo" src="assets/images/logo/ohmyfood.png" alt="logo du restaurant">
         </header>
-            <img class="hero-section" src="images/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photo d'un plat">
+            
             <main>
+              <img class="hero-section" src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo d'un plat">
                 <div id="entrees-plats-and-desserts-section" class="entrees-plats-and-desserts">
                   <div class="main-title">
-                    <h2>À la française</h2>
+                    <div class="flex-container">
+                    <h1>La palette du goût</h1>
                     <div class="heart">
                       <input type="checkbox" class="checkbox-hidden" id="heartCheckbox3">
                       <label for="heartCheckbox3" class="heart-container">
-                        <i class="far fa-heart"></i>
-                        <i class="fas fa-heart"></i>
+                        <div class="heart-icons">
+                          <i class="far fa-heart"></i>
+                          <i class="fas fa-heart"></i>
+                        </div>
                       </label>
                     </div>
                   </div>
+                  </div>
                   <section class="box">
                     <div class="box__menu">
-                      <h4 class="box__menu__title">ENTRÉES</h4>
+                      <h2 class="box__menu__title">ENTRÉES</h2>
                       <div class="box__element anim-1">
                         <input type="checkbox" id="checkbox1" class="box__checkbox">
                         <div class="box__contents">
                           <div class="box__contents__left">
-                            <h5 class="box__contents__title">Tartare de poulpe acidulé</h5>
+                            <h3 class="box__contents__title">Fricassé d'escargot</h3>
                             <div class="box__contents__inline">
-                              <p class="box__contents__inline__subtitle">Aux zestes d'orange</p>
+                              <p class="box__contents__inline__subtitle">Au piment d'espelette</p>
                               <p class="box__contents__inline__price"><strong>25€</strong></p>
                             </div>
                           </div>
@@ -60,9 +60,9 @@
                       <div class="box__element anim-2">
                         <div class="box__contents">
                           <div class="box__contents__left">
-                            <h5 class="box__contents__title">Velouté de légumes d'antan</h5>
+                            <h3 class="box__contents__title">Foie gras de canard mi-cuit</h3>
                             <div class="box__contents__inline">
-                              <p class="box__contents__inline__subtitle">Carotte, panais, topinambour</p>
+                              <p class="box__contents__inline__subtitle">Et ses copeaux de truffe noire</p>
                               <p class="box__contents__inline__price"><strong>35€</strong></p>
                             </div>
                           </div>
@@ -77,9 +77,9 @@
                       <div class="box__element anim-3">
                         <div class="box__contents">
                           <div class="box__contents__left">
-                            <h5 class="box__contents__title">Soupe à l'oignon</h5>
+                            <h3 class="box__contents__title">Oeuf au plat</h3>
                             <div class="box__contents__inline">
-                              <p class="box__contents__inline__subtitle">Revisitée</p>
+                              <p class="box__contents__inline__subtitle">Assaisonné à la truffe sur lit de caviar</p>
                               <p class="box__contents__inline__price"><strong>20€</strong></p>
                             </div>
                           </div>
@@ -94,14 +94,14 @@
               
 
                   <div class="box__menu">
-                      <h4 class="box__menu__title">PLATS</h4>
+                      <h2 class="box__menu__title">PLATS</h2>
 
                       <div class="box__element anim-4">
                           <div class="box__contents">
                               <div class="box__contents__left">
-                                  <h5 class="box__contents__title">Coquilles Saint-Jacques</h5>
+                                  <h3 class="box__contents__title">Filet de boeuf aux herbes</h3>
                                   <div class="box__contents__inline">
-                                      <p class="box__contents__inline__subtitle">Accompagnées d'une purée de panais</p>
+                                      <p class="box__contents__inline__subtitle">Accompagné de sa ribambelle de légumes</p>
                                       <p class="box__contents__inline__price"><strong>40€</strong></p>
                                   </div>
                               </div>
@@ -116,9 +116,9 @@
                       <div class="box__element anim-5">
                           <div class="box__contents">
                               <div class="box__contents__left">
-                                  <h5 class="box__contents__title">Magret de canard</h5>
+                                  <h3 class="box__contents__title">Parmentier de queue de boeuf</h3>
                                   <div class="box__contents__inline">
-                                      <p class="box__contents__inline__subtitle">Et parmentier de pommes de terre</p>
+                                      <p class="box__contents__inline__subtitle">À la truffe noire sur sa purée de panais</p>
                                       <p class="box__contents__inline__price"><strong>35€</strong></p>
                                   </div>
                               </div>
@@ -133,9 +133,9 @@
                       <div class="box__element anim-6">
                           <div class="box__contents">
                               <div class="box__contents__left">
-                                  <h5 class="box__contents__title">Pigeonneau d’Ille-et-Vilaine</h5>
+                                  <h3 class="box__contents__title">Filet de Turbot</h3>
                                   <div class="box__contents__inline">
-                                      <p class="box__contents__inline__subtitle">Sur son lit de gnocchis aux légumes</p>
+                                      <p class="box__contents__inline__subtitle">Aux agrumes</p>
                                       <p class="box__contents__inline__price"><strong>44€</strong></p>
                                   </div>
                               </div>
@@ -149,14 +149,14 @@
                   </div>
 
                   <div class="box__menu">
-                      <h4 class="box__menu__title">DESSERTS</h4>
+                      <h2 class="box__menu__title">DESSERTS</h2>
 
                       <div class="box__element anim-7">
                           <div class="box__contents">
                               <div class="box__contents__left">
-                                  <h5 class="box__contents__title">Pétales de violettes glacés</h5>
+                                  <h3 class="box__contents__title">Paris-Brest</h3>
                                   <div class="box__contents__inline">
-                                      <p class="box__contents__inline__subtitle">Et purée de noisettes</p>
+                                      <p class="box__contents__inline__subtitle">Revisité</p>
                                       <p class="box__contents__inline__price"><strong>18€</strong></p>
                                   </div>
                               </div>
@@ -171,9 +171,9 @@
                       <div class="box__element anim-8">
                           <div class="box__contents">
                               <div class="box__contents__left">
-                                  <h5 class="box__contents__title">Fondant au chocolat</h5>
+                                  <h3 class="box__contents__title">Macaron au chocolat d'exception</h3>
                                   <div class="box__contents__inline">
-                                      <p class="box__contents__inline__subtitle">Revisité</p>
+                                      <p class="box__contents__inline__subtitle">Et glace à la vanille de Madagascar</p>
                                       <p class="box__contents__inline__price"><strong>22€</strong></p>
                                   </div>
                               </div>
@@ -188,9 +188,9 @@
                       <div class="box__element anim-9">
                           <div class="box__contents">
                               <div class="box__contents__left">
-                                  <h5 class="box__contents__title">Millefeuille croustillant</h5>
+                                  <h3 class="box__contents__title">Mousse au chocolat</h3>
                                   <div class="box__contents__inline">
-                                      <p class="box__contents__inline__subtitle">Myrtilles et pâte d’amande </p>
+                                      <p class="box__contents__inline__subtitle">Au piment d'espelette et à la truffe noire </p>
                                       <p class="box__contents__inline__price"><strong>23€</strong></p>
                                   </div>
                               </div>
@@ -207,16 +207,15 @@
                 </div>
               </section>
             </div>
-          </main>         
+          </main>
     </div>
-   
         <footer>
-            <img src="images/images/logo/ohmyfood.png" alt="" class="logo">
+            <img src="assets/images/logo/ohmyfood.png" alt="" class="logo">
                 <ul class="footer-menu">
                     <li><i class="fa-solid fa-utensils"></i>Proposer un restaurant</li>
                     <li><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</li>
                     <li>Mentions légales</li>
-                    <li>Contact</li>
+                    <li><a href="mailto:adresse_email@example.com">Contact</a></li>
                 </ul>  
         </footer> 
 </body>

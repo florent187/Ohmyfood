@@ -23,11 +23,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 100%;
     z-index: 999;
     animation: fadeOut 1s linear 2s forwards;
   
@@ -57,7 +56,8 @@
     height: 40px; /* Hauteur du spinner */
     animation: spin 1s linear infinite; /* Animation du spinner */
     position: relative;
-    top: 200px;
+    top: -50%;
+    left: -50%;
   }
   
   @keyframes spin {
@@ -92,8 +92,7 @@
       width: 100%;
       height: 45px;
     }
-      p {
-        font-family:  $font-roboto-medium;
+      p { 
         line-height: 16px;
       }
   
@@ -117,9 +116,9 @@
     padding: 2rem;
     padding-top: 0;
 
-    h2 {
+    h1 {
       @include flex-center;
-      font-family: $font-roboto-bold;
+      font-weight: 700;
       font-size: 24px;
       width: 275px;
       margin-bottom: 10px;
@@ -127,7 +126,6 @@
     }
 
     p {
-      font-family: $font-roboto-light;
       font-size: 17px;
     }
   }
@@ -170,7 +168,6 @@
   background-color: #fff;
   padding: 1rem;
   margin: 1rem;
-  height: 368px;
   margin-top: 20px;
 
   .function-cards {
@@ -235,7 +232,7 @@
  
   h2 {
     width: 88%;
-    margin-bottom: 15px;
+    margin-top: 15px;
   }
 
   .restaurants-cards {
@@ -279,7 +276,6 @@
         .fa-heart.far {
           transform: scale(1);
           -webkit-text-stroke: 0;
-           text-stroke: 0;
           -webkit-text-fill-color: #000;
            color: #000;
         }
